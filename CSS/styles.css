@@ -1252,13 +1252,14 @@ Primera sección del "main"
   padding: 3.2rem 4rem;
   margin-bottom: 4rem;
   background-color: var(--snowColor);
-  position: static;
+  transition: all 0.7s;
   overflow: hidden;
 }
 
 .newContainer {
   height: 9.6rem;
   transition: all 0.7s;
+  background-image: url("../../../assets/patterns/left-downward-arrow.svg");
 }
 
 .containerExample__first {
@@ -1269,9 +1270,12 @@ Primera sección del "main"
 }
 
 .changetext {
-  width: 2.4rem;
-  height: 2.4rem;
-  background-color: tomato;
+  width: 1.6rem;
+  height: 1.2rem;
+  background-image: url("../../../assets/patterns/left-downward-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0.1rem solid red;
   transition: all 1s;
 }
 .changetext:hover {
@@ -1284,6 +1288,12 @@ Primera sección del "main"
 
 .text-example {
   color: var(--secondColorPrimary);
+  transition: all 1s;
+}
+
+.newText {
+  opacity: 0;
+  transition: all 0.8s;
 }
 
 .main-section__box-about, .main-section__box-careers {
