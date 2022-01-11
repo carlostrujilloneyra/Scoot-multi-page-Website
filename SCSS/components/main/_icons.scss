@@ -1,0 +1,23 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-section__icon{
+    margin-bottom: 2.4rem;
+}
+
+/*Imágenes*/
+
+.main-section__img{
+    width: 30rem;
+    margin-bottom: 4rem;
+    border-radius: 50%;
+
+    @include responsive(tablet){
+        width: 42rem;
+    }
+
+    @include responsive(desktop){
+        width: 40rem;
+        margin-bottom: 2rem;
+    }
+}

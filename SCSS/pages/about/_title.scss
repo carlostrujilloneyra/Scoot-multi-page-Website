@@ -1,0 +1,18 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-hero__title-about, .main-hero__title-careers, .main-hero__title-location {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/*Otro títulos*/
+
+.main-title-article-about, .main-title-article-careers{
+    text-align: center;
+    margin-bottom: 3.6rem;
+
+    @include responsive(tablet){
+        margin-bottom: 4.8rem;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.container-footer-icons{
+    & img{
+        transition: all .3s;
+        margin-right: 2.4rem;
+
+        &:hover{
+            cursor: pointer;
+            filter: grayscale(2);
+        }
+        
+        @include responsive(tablet){
+            margin-right: 2.4rem;
+        }
+        
+        @include responsive(desktop){
+            margin-right: 1.6rem;
+        }
+    }
+}

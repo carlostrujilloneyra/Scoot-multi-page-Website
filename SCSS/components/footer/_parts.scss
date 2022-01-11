@@ -1,0 +1,111 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+/*Primera parte del Footer*/
+
+.main-footer__firstPart{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 20rem 15rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 0 3.2rem;
+    background-color: var(--secondColorPrimary);
+    overflow: hidden;
+
+    & .main-title__footer{
+        align-self: flex-end;
+    }
+
+
+    @include responsive(desktop){
+        display: grid;
+        justify-items: start;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 35rem;
+        column-gap: 16rem;
+        padding-left: 12rem;
+
+        & .main-title__footer, & .main-footer__icons{
+            align-self: center;
+        }
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 16rem;
+        right: -15rem;
+        width: 116rem;
+        height: 35rem;
+        background-image: url('../assets/images/Group\ 22.png');
+        background-repeat: no-repeat;
+
+        @include responsive(tablet){
+            top: 17rem;
+        }
+        
+        @include responsive(800px){
+            right: -10rem;
+        }
+
+        @include responsive(900px){
+            right: -4rem;
+        }
+
+        @include responsive(desktop){
+            right: -20rem;
+        }
+    }
+}
+
+/*Segunda parte del Footer*/
+
+.main-footer__secondPart{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 12rem 32rem ;
+    justify-items: center;
+    background-color:var(--colorFooter);
+    padding-top: 6.4rem;
+
+    & .main-footer__logo{
+        align-self: center;
+    }
+
+    @include responsive(tablet){
+        align-items: center;
+        grid-template-columns: 12rem 1fr;
+        grid-template-rows: repeat(1,1fr);
+        column-gap: 3.6rem;
+        height: 9.6rem;
+        padding-top: 0;
+        padding-left: 3.2rem;
+    }
+
+    @include responsive(desktop){
+        column-gap: 6rem;
+        padding-left: 12rem;
+    }
+}
+
+
+.main-footer__content{
+    display: flex;
+    flex-direction: column;
+    
+    @include responsive(tablet){
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    @include responsive(desktop){
+        width: 80%;
+        margin-left: 2.4rem;
+    }
+    
+}

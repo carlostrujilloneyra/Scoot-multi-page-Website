@@ -1,0 +1,49 @@
+/* Fuentes del Proyecto */
+
+/* Variables de Fuentes en CSS: */
+
+:root{
+    --fontTitles: 'Space Mono', monospace;
+    --fontText: 'Lexend Deca', sans-serif;
+}
+
+/*Variables de Fuentes en SASS:*/
+
+$fontTitles: 'Space Mono', monospace;
+$fontText: 'Lexend Deca', sans-serif;
+
+/*Colores*/
+
+/*Variables de Colores en CSS:*/
+
+:root{
+    --firstColorPrimary: #FCB72B;
+    --firstColorPrimaryHover: #FFF4DF;
+    --secondColorPrimary: #495567;
+    --greyColor: #939CAA;
+    --lightGreyColor: #E5ECF4;
+    --snowColor: #F2F5F9;
+    --whiteColor: #FFFFFF;
+    --colorTitles: #495567;
+    --colorSubTitles: #495567;
+    --colorText: #939CAA;
+    --colorButtons: #FCB72B;
+    --colorFooter: #333A44;
+}
+
+/*Variables de Colores en SASS
+
+$firstColorPrimary: #FCB72B;
+$firstColorPrimaryHover: #FFF4DF;
+$secondColorPrimary: #495567;
+$greyColor: #939CAA;
+$lightGreyColor: #E5ECF4;
+$snowColor: #F2F5F9;
+$whiteColor: #FFFFFF;
+$colorTitles: #495567;
+$colorSubTitles: #495567;
+$colorText: #939CAA;
+$colorButtons: #FCB72B;
+$colorFooter: #333A44; 
+
+*/

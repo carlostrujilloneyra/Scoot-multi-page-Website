@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    padding-top: 9.6rem;
+    min-height: 100vh;
+
+    @include responsive(tablet){
+        padding-top: 0;
+    }
+
+    @include responsive(bigDesktop){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

@@ -1,0 +1,26 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-button--hero{
+    color: transparent;
+
+    &::before{
+        color: var(--whiteColor);
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @include responsive(tablet){
+        margin-left: 0;
+    }
+
+    @include responsive(desktop){
+        margin-left: 4.8rem;
+    }
+
+    @include responsive(bigDesktop){
+        margin-left: 3.2rem;
+    }
+}

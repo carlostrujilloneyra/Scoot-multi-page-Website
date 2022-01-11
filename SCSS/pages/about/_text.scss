@@ -1,0 +1,31 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.text-article-about, .text-article-careers, .text-article-location{
+    margin-bottom: 2.4rem;
+
+    @include responsive(desktop){
+        width: 75%;
+    }
+}
+
+.text-ourValues-about, .text-ourValues-careers{
+    height: 12rem;
+
+    @include responsive(tablet){
+        width: 100%;
+    }
+}
+
+.text-article-about, .text-article-careers, .text-article-location{
+    max-height: 15rem;
+
+    @include responsive(tablet){
+        max-height: 9.6rem;
+    }
+
+    @include responsive(desktop){
+        max-height: 9rem;
+    }
+}
+

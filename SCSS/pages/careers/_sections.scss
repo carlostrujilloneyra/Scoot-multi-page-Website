@@ -1,0 +1,78 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-content__section-careers{
+    @include responsive(tablet){
+        padding: 1.2rem 9rem;
+    }
+
+    @include responsive(desktop){
+        padding: 1.2rem 12rem;
+    }
+}
+
+.main-section__container-careers-firstSection{
+    
+    @include responsive(tablet){
+        grid-template-rows: 45rem;
+    }
+
+}
+
+
+.main-section__container-careers-secondSection{
+    padding: 1.2rem 3.2rem;
+    @include responsive(tablet){
+        grid-template-rows: repeat(2, minmax(45rem, 50rem));
+    }
+    
+    @include responsive(desktop){
+        grid-template-rows: repeat(1,1fr);
+    }
+}
+
+/*Sección de Jobs*/
+.main-section-container-jobs{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5,minmax(21rem,23rem));
+    row-gap: 1.6rem;
+    padding: 1.2rem 3.2rem;
+
+    @include responsive(tablet){
+        padding: 0;
+        grid-template-rows: repeat(6,13rem);
+        row-gap: 2.4rem;
+    }
+    
+    @include responsive(desktop){
+        row-gap: 2.4rem;
+    }
+}
+
+.main-section-container-info{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 1.6rem;
+    background-color: var(--snowColor);
+    text-align: center;
+    padding: 3.2rem;
+    
+    @include responsive(tablet){
+        grid-template-columns: 1fr 20rem;
+        column-gap: 3.6rem;
+        text-align: start;
+        padding: 3.2rem 4rem;
+    }
+
+    @include responsive(desktop){
+        grid-template-columns: 1fr 23rem;
+
+        .main-button-careers-job{
+            align-self: center;
+            justify-self: flex-end;
+        }
+    }
+
+}

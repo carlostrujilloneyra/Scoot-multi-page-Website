@@ -1,0 +1,87 @@
+// Estilos para Hero
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-hero{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65rem;
+    background-image: url('../assets/images/home-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 8rem;
+    padding: 0 1.2rem;
+    overflow: hidden;
+    
+    &::after{
+        content: '';
+        position: absolute;
+        right: 24rem;
+        bottom: 1rem;
+        width: 48rem;
+        height: 16rem;
+        background-image: url('../assets/patterns/right-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        overflow: hidden;
+
+        @include responsive(tablet){
+            background-image: url('../assets/patterns/white-circles.svg');
+            bottom: 4rem;
+            right: -4.4rem;
+            width: 24rem;
+            height: 7rem;
+        }
+
+        @include responsive(desktop){
+            display: none;
+            bottom: 19rem;
+            width: 22rem;
+            right: -11rem;
+        }
+
+        @include responsive(1300px){
+            display: block;
+        }
+
+        @include responsive(bigDesktop){
+            bottom: 18.5rem;
+            right: -2.4rem;
+        }
+    }
+
+    @include responsive(tablet){
+        background-image: url('../assets/images/home-hero-tablet.jpg');
+        padding: 0 3.2rem;    
+    }
+
+    @include responsive(desktop){
+        justify-content: start;
+        background-image: url('../assets/images/home-hero-desktop.jpg');
+        padding: 0 12rem;
+    }
+}
+
+.main-hero__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 3.2rem;
+    
+    @include responsive(tablet){
+        display: flex;
+        align-items: center;
+    }
+
+    @include responsive(desktop){
+        width: 60%;
+        align-items: start;
+        padding: 0rem;
+    }
+}

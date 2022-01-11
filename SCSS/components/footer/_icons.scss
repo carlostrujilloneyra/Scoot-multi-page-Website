@@ -1,0 +1,21 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+
+.main-footer__icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    min-width: 30rem;
+}
+
+.main-footer__img--first{
+    width: 12rem;
+    height: 4rem;
+    margin-right: 1.2rem;
+}
+
+.main-footer__img--second{
+    width: 13rem;
+    height: 4rem;
+}

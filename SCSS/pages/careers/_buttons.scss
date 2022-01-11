@@ -1,0 +1,14 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-button-careers-job{
+    display: inline-block;
+    height: 6.4rem;
+    text-align: center;
+    padding: 1.2rem 6.4rem;
+
+    @include responsive(tablet){
+        width: 20rem;
+    }
+}
+

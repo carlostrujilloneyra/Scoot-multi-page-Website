@@ -1,0 +1,121 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+/**
+Primera sección del "main"
+**/
+
+.main-content__section{
+    position: relative;
+    margin-bottom: 4.8rem;
+    padding: 1.2rem 0;
+    
+    @include responsive(tablet){
+        margin-bottom: 8rem;
+        padding: 1.2rem 9rem;
+    }
+
+    @include responsive(desktop){
+        min-height: 45rem;
+        padding: 1.2rem 12rem;
+    }
+
+    @include responsive(1500px){
+        overflow: hidden;
+    }
+
+}
+
+.main-content--secondSection, .main-content--thirdSection, .main-content--fourSection{
+    overflow: hidden;
+        
+    &::after{
+        content: '';
+        position: absolute;
+        height: 15rem;
+        background-image: url('../assets/patterns/left-downward-arrow.svg');
+        background-repeat: no-repeat;
+    }
+
+    @include responsive(tablet){
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -25rem;
+            width: 35rem;
+            height: 44rem;
+            transform: rotate(-10deg);
+            background-image: url('../../../assets/patterns/circle.svg');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+/*Segunda Sección*/
+.main-content--secondSection{
+
+    &::after{
+        top: 18rem;
+        left: 3rem;
+        width: 100%;
+
+        @include responsive(tablet){
+            top: 32rem;
+            left: 4rem;
+        }
+
+        @include responsive(790px){
+            left: 20%;
+        }
+
+        @include responsive(790px){
+            left: 28%;
+        }
+        
+        @include responsive(desktop){
+            top: 28rem;
+            left: 52%;
+        }
+    }
+}
+
+/*Tercera Sección*/
+.main-content--thirdSection{
+
+    &::before{
+        transform: rotate(150deg);
+        top: -4rem;
+        right: 0;
+        left: -27rem;
+    }
+
+    &::after{
+        top: -7rem;
+        left: -20rem;
+        width: 50rem;
+        height: 26rem;
+        background-image: url('../assets/patterns/left-upward-arrow.svg');
+        transform: rotate(180deg);
+    }
+}
+
+/*Cuarta Sección*/
+.main-content--fourSection{
+
+    &::after{
+        top: 7rem;
+        left: 15rem;
+        width: 100%;
+
+        @include responsive(tablet){
+            left: 52%;
+            background-image: url('../assets/patterns/left-downward-arrow.svg');
+            height: 18rem;
+        }
+
+        @include responsive(desktop){
+            left: 72%;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-content-location{
+    @include responsive(desktop){
+        width: 100%;
+    }
+}
+
+.main-content__section-map{
+    width: 100%;
+    height: 16rem;
+    background-image: url('../assets/images/world-map-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include responsive(tablet){
+        height: 34rem;
+        background-image: url('../assets/images/MapaTablet.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    @include responsive(desktop){
+        height: 54rem;
+        background-image: url('../assets/images/MapaDesktop.png');
+    }
+}

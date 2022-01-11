@@ -1,0 +1,76 @@
+// Estilos para el text de Hero
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-hero__text{
+    position: relative;
+    margin-bottom: 3.2rem;
+    color: var(--whiteColor);
+    text-align: center;
+    line-height: 1.56;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        top: 2rem;
+        left: -24rem;
+        width: 20rem;
+        height: 1.5rem;
+        overflow: hidden;
+        background-image: none;
+        
+        @include responsive(desktop){
+            background-image: url('../assets/patterns/line.svg');
+        }
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        height: 12rem;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        overflow: hidden;
+
+        @include responsive(tablet){
+            background-position: right center;
+            background-image: url('../assets/patterns/right-arrow.svg');
+            top: 14rem;
+            right: 45rem;
+            width: 48rem;
+            height: 18rem;
+        }
+        
+        @include responsive(desktop){
+            top: -0.5rem;
+            right: -41.5rem;
+            width: 40rem;
+            background-position: left center;
+            background-image: url('../assets/patterns/right-arrow.svg');
+            background-size: contain;
+        }
+
+        @include responsive(bigDesktop){
+            top: 1rem;
+            right: -47rem;
+            width: 45rem;
+        }
+    }
+    
+    @include responsive(tablet){
+        margin-bottom: 3.2rem;
+        text-align: center;
+    }
+
+    @include responsive(desktop){
+        margin-left: 4.8rem;
+        margin-bottom: 4rem;
+        text-align: start;
+    }
+
+    @include responsive(bigDesktop){
+        width: 65%;
+        margin-left: 3.2rem;
+    }
+}

@@ -1,0 +1,49 @@
+// Estilos para la barra de navegación
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-nav{
+    display: block;
+    margin-bottom: 24rem;
+
+    @include responsive(tablet){
+        margin: 0;
+        margin-right: .4rem;
+    }
+}
+
+.main-nav__list{
+    list-style: none;
+    
+    @include responsive(tablet){
+        display: flex;
+    }
+}
+
+.main-nav__items{
+    width: 100%;
+    padding: .4rem .8rem;
+    margin-bottom: 2.4rem;
+
+    &:hover a{
+        color: var(--firstColorPrimary);
+    }
+
+    @include responsive(tablet){
+        margin: .8rem  1.2rem;
+    }
+
+    @include responsive(desktop){
+        margin: .8rem  2.4rem;
+    }
+}
+
+
+.enlace--newStyle{
+    font-size: 1.8rem;
+    color: #E5ECF4;
+
+    @include responsive(tablet){
+        color: var(--greyColor);
+    }
+}

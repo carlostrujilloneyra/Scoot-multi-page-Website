@@ -1,0 +1,30 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.container-main-hamburguer{
+    position: absolute;
+    left: 3.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.6rem;
+    background: linear-gradient(#FCB72B 20%,transparent 20%,transparent 40%,#FCB72B 40%,#FCB72B 60%, transparent 60%,transparent 80%,#FCB72B 80%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .5s;
+
+    &:hover{
+        cursor: pointer;
+    }
+    
+    @include responsive(tablet){
+        display: none;
+    }
+}
+
+.main-hamburguer-new{
+    transform: scale(1.6);
+    left: 3.2rem;
+    background-image: url('../assets/icons/close.svg');
+    background-size: cover;
+}

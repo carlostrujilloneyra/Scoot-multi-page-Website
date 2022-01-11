@@ -1,0 +1,102 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-section__container{
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(28rem,1fr));
+    row-gap: .4rem;
+    padding: 0 3.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+    justify-items: center;
+
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: var(--lightGreyColor);
+        z-index: -100;
+
+        @include responsive(tablet){
+            top: -14rem;
+            left: 5rem;
+            width: 1.6rem;
+            height: 63rem;
+        }
+
+        @include responsive(desktop){
+            top: 5.4rem;
+            left: -25rem;
+            width: 105%;
+            height: 1.6rem;
+        }
+
+        @include responsive(1200px){
+            left: -42rem;
+            width: 110%;
+        }
+
+        @include responsive(1500px){
+            left: -48rem;
+            width: 110%;
+        }
+
+        @include responsive(1600px){
+            left: -42rem;
+            width: 110%;
+        }
+
+        @include responsive(1900px){
+            left: -38rem;
+        }
+
+        @include responsive(2100px){
+            left: -40rem;
+        }
+
+        @include responsive(2200px){
+            left: -36rem;
+            width: 105%;
+        }
+
+        @include responsive(2300px){
+            width: 110%;
+        }
+
+        @include responsive(2700px){
+            left: -45rem;
+        }
+    }
+
+    @include responsive(tablet){
+        grid-template-rows: repeat(3,20rem);
+        padding: 0;
+    }
+
+    @include responsive(desktop){
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: minmax(34rem,40rem);
+        gap: 3rem;
+        padding: 0;
+        padding-bottom: 2.4rem;
+    }
+
+    /*Los demás contenedores*/
+    &--secondContainer, &--thirdContainer, &--fourContainer{
+        
+        &::before{
+            display: none;
+        }
+
+        @include responsive(tablet){
+            grid-template-rows: 45rem 36rem;
+            row-gap: 2rem;
+        }
+
+        @include responsive(desktop){
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: minmax(34rem,42rem);
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-hero__content-about, .main-hero__content-careers{
+
+    @include responsive(tablet){
+        width: 40%;
+    }
+
+    @include responsive(desktop){
+        width: 20%;
+    }
+}
+
+
+.main-hero-about, .main-hero-careers, .main-hero-locations{
+    position: relative;
+    height: 16rem;
+    background-image: url('../assets/images/about-hero-mobile.jpg');
+
+    @include responsive(tablet){
+        justify-content: flex-start;
+    }
+
+    &::before{
+        display: none;
+
+        @include responsive(tablet){
+            display: block;
+            content: '';
+            position: absolute;
+            background-image: url('../assets/patterns/white-circles.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            right: -3rem;
+            width: 24rem;
+            height: 7rem;
+        }
+    }
+
+    &::after{
+        display: none;
+    }
+  
+
+    @include responsive(tablet){
+        height: 20rem;
+        background-image: url('../assets/images/about-hero-tablet.jpg');
+    }
+
+    @include responsive(desktop){
+        background-image: url('../assets/images/about-hero-desktop.jpg');
+    }
+}
+
+/*Hero para Careers*/
+
+.main-hero-careers, .main-hero-locations{
+    background-image: url('../assets/images/careers-location-hero-mobile.jpg');
+
+    @include responsive(tablet){
+        background-image: url('../assets/images/careers-locations-hero-tablet.jpg');
+    }
+
+    @include responsive(desktop){
+        background-image: url('../assets/images/careers-locations-hero-tablet.jpg');
+    }
+}
+

@@ -1,0 +1,9 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts/mixins' as *;
+
+.main-subtitle-article{
+    height: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2.4rem;
+}
