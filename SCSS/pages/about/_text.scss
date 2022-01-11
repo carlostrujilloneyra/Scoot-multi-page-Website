@@ -2,6 +2,7 @@
 @use '../../abstracts/mixins' as *;
 
 .text-article-about, .text-article-careers, .text-article-location{
+    line-height: 1.56;
     margin-bottom: 2.4rem;
 
     @include responsive(desktop){
@@ -29,3 +30,7 @@
     }
 }
 
+.text-example{
+    line-height: 1.56;
+    color: var(--secondColorPrimary);
+}

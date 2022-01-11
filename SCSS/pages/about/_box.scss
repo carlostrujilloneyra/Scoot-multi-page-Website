@@ -53,3 +53,28 @@
         width: 30rem;
     }
 }
+
+.main-content-section__box{
+    background-color: var(--snowColor);
+    padding: 2.4rem;
+    
+    &--grid{
+        display: grid;
+        row-gap: 2.4rem;
+
+        @include responsive(desktop){
+            grid-template-rows: 6rem 1fr;
+        }
+    }
+
+    @include responsive(tablet){
+        padding: 3rem;
+    }
+    
+}
+
+.main-box__firstPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
