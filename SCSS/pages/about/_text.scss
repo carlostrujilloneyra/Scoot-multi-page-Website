@@ -33,4 +33,8 @@
 .text-example{
     line-height: 1.56;
     color: var(--secondColorPrimary);
+
+    @include responsive(1300px){
+        width: 90%;
+    }
 }

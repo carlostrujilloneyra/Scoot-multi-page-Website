@@ -7,11 +7,15 @@
     row-gap: 2.4rem;
 
     @include responsive(desktop){
-        grid-template-rows: 32rem 12rem 12rem;
+        grid-template-rows: 32rem 13rem 12rem;
     }
 
     @include responsive(1100px){
-        grid-template-rows: 28rem 12rem 12rem;
+        grid-template-rows: 28rem 12rem 11rem;
+    }
+
+    @include responsive(1200px){
+        grid-template-rows: 25rem 12rem 11rem;
     }
 }
 
