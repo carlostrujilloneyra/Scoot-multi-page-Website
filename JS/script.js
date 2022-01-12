@@ -25,21 +25,23 @@ const showNav = (idHamburguer, idContentHeader, idNav, idList,listEnlaces)=> {
 
 showNav('main-hamburguer','main-header__content','main-nav','main-nav__list','.enlace-id');
 
-// Borrar luego
+// Interacción al mostrar y ocultar información
 
-const hiddeContent = (idChange, idContainer, idText) => {
-    const buttonChange = document.getElementById(idChange);
-    const container = document.getElementById(idContainer);
-    const text = document.getElementById(idText)
+const hiddeContent = (idChange, idContainer,idText) => {
+    const buttonChange = document.getElementById(idChange),
+        container = document.getElementById(idContainer),
+        text = document.getElementById(idText)
 
     if (buttonChange, container, text) {
         buttonChange.addEventListener('click', () => {
-            container.classList.toggle('newContainer');
-            text.classList.toggle('newText');
+            buttonChange.classList.toggle('new-interaction');
+            container.classList.toggle('main-content-section__box--new');
+            text.classList.toggle('text-example__new');
         });
     }
-    
 }
 
-hiddeContent('change', 'container-change','first-text');
-hiddeContent('change-second', 'container-change-second', 'second-text');
+hiddeContent('first-interaction', 'first-container', 'first-text');
+hiddeContent('second-interaction', 'second-container', 'second-text');
+
+
