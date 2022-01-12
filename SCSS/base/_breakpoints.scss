@@ -2,6 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .main-header, .main-hero, .main-content, .main-footer{
+    overflow: hidden;
     @include responsive(1600px){
         max-width: 80%;
     }

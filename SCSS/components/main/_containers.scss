@@ -83,7 +83,7 @@
 
     /*Los demás contenedores*/
     &--secondContainer, &--thirdContainer, &--fourContainer{
-        
+        overflow: hidden;
         &::before{
             display: none;
         }

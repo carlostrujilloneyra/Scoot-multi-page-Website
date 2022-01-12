@@ -1,12 +1,19 @@
 @use '../../abstracts/variables' as *;
 @use '../../abstracts/mixins' as *;
 
-.text-article-about, .text-article-careers, .text-article-location{
+.text-article-about, .text-article-careers{
     line-height: 1.56;
     margin-bottom: 2.4rem;
 
+    @include responsive(1100px){
+        width: 78%;
+    }
+}
+
+.text-article-location{
+    
     @include responsive(desktop){
-        width: 75%;
+        width: 80%;
     }
 }
 

@@ -28,7 +28,7 @@
     }
 
     @include responsive(desktop){
-        grid-template-rows: repeat(1,15rem);
+        grid-template-rows: repeat(1,24rem);
 
     }
 }
@@ -67,10 +67,10 @@
     }
 
     @include responsive(desktop){
-        grid-template-columns: 36rem 1fr;
+        grid-template-columns: 34rem 1fr;
         grid-template-rows: minmax(15rem,20rem);
         text-align: start;
-        column-gap: 4.8rem;
+        column-gap: 3.6rem;
         justify-items: center;
         align-items: center;
         order: -1;
