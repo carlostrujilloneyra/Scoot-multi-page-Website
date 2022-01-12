@@ -31,10 +31,22 @@
 }
 
 .text-example{
-    line-height: 1.56;
     color: var(--secondColorPrimary);
+    line-height: 1.56;
+    margin-top: 2.4rem;
+    transition: all .4s;
+
 
     @include responsive(1300px){
         width: 90%;
+    }
+
+    @include responsive(1400px){
+        width: 80%;
+    }
+
+    &__new{
+        opacity: 0;
+        transition: all .4s;
     }
 }

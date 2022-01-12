@@ -2,20 +2,29 @@
 @use '../../abstracts/mixins' as *;
 
 .main-content-section{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    display: grid;    
     row-gap: 2.4rem;
-
-    @include responsive(desktop){
-        grid-template-rows: 32rem 13rem 12rem;
-    }
-
-    @include responsive(1100px){
-        grid-template-rows: 28rem 12rem 11rem;
-    }
-
-    @include responsive(1200px){
-        grid-template-rows: 25rem 12rem 11rem;
-    }
 }
 
+    /*Nueva clase para cuando se haga la interacción*/
+
+    
+
+
+//     .main-content-section__new{
+//         // grid-template-rows: 9rem 10rem 10rem;
+//         // @include responsive(tablet){
+//         // }
+    
+//         // @include responsive(desktop){
+//         //     grid-template-rows: 9rem 12rem 11rem;
+//         // }
+    
+//         // @include responsive(100px){
+//         //     grid-template-rows: 9rem 12rem 11rem;
+//         // }
+    
+//         // @include responsive(1200px){
+//         //     grid-template-rows: 9rem 12rem 11rem;
+//         // }
+// }
