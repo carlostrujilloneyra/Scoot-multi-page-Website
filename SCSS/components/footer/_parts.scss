@@ -71,10 +71,6 @@
     background-color:var(--colorFooter);
     padding-top: 6.4rem;
 
-    & .main-footer__logo{
-        align-self: center;
-    }
-
     @include responsive(tablet){
         align-items: center;
         grid-template-columns: 12rem 1fr;

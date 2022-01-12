@@ -79,7 +79,9 @@
 }
 
 .return-index{
-    
+    max-height: 3rem;
+    align-self: center;
+
     &:hover{
         cursor: pointer;
     }

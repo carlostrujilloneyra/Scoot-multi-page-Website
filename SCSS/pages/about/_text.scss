@@ -6,7 +6,7 @@
     margin-bottom: 2.4rem;
 
     @include responsive(1100px){
-        width: 78%;
+        width: 80%;
     }
 }
 
@@ -33,7 +33,7 @@
     }
 
     @include responsive(desktop){
-        max-height: 9rem;
+        max-height: 10rem;
     }
 }
 
@@ -41,9 +41,8 @@
     color: var(--secondColorPrimary);
     line-height: 1.56;
     margin-top: 2.4rem;
-    transition: all .4s;
-
-
+    transition: all .3s;
+    
     @include responsive(1300px){
         width: 90%;
     }
@@ -54,6 +53,6 @@
 
     &__new{
         opacity: 0;
-        transition: all .4s;
+        transition: all .3s;
     }
 }

@@ -39,7 +39,7 @@
         @include responsive(desktop){
             display: none;
             bottom: 19rem;
-            width: 22rem;
+            width: 23rem;
             right: -11rem;
         }
 
@@ -48,6 +48,7 @@
         }
 
         @include responsive(bigDesktop){
+            width: 24rem;
             bottom: 18.5rem;
             right: -2.4rem;
         }
