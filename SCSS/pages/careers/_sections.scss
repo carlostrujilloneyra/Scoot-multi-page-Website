@@ -41,7 +41,7 @@
 
     @include responsive(tablet){
         padding: 0;
-        grid-template-rows: repeat(6,13rem);
+        grid-template-rows: repeat(5,13rem);
         row-gap: 2.4rem;
     }
     

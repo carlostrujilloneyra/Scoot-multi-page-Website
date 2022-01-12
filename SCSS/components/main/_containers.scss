@@ -76,7 +76,7 @@
 
     @include responsive(desktop){
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: minmax(34rem,40rem);
+        grid-template-rows: minmax(34rem,39rem);
         gap: 3rem;
         padding: 0;
         padding-bottom: 2.4rem;

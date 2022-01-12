@@ -2,21 +2,24 @@
 @use '../../abstracts/mixins' as *;
 
 .main-text-article{
-    height: 15rem;
+    height: auto;
     margin-bottom: 4rem;
     line-height: 1.56;
-
-    @include responsive(tablet){
-        height: 10rem;
+    
+    @include responsive(420px){
         margin-bottom: 2.4rem;
     }
 
+    @include responsive(tablet){
+        height: 9rem;
+    }
+
     @include responsive(desktop){
-        min-height: 14.5rem;
+        height: auto;
         margin-bottom: 3.2rem;
     }
-    
-    @include responsive(1030px){
-        min-height: 13rem;
+
+    @include responsive(1450px){
+        width: 85%;
     }
 }

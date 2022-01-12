@@ -27,15 +27,8 @@
 
 .text-article-about, .text-article-careers, .text-article-location{
     max-height: 15rem;
-
-    @include responsive(tablet){
-        max-height: 9.6rem;
-    }
-
-    @include responsive(desktop){
-        max-height: 10rem;
-    }
 }
+
 
 .text-example{
     color: var(--secondColorPrimary);
