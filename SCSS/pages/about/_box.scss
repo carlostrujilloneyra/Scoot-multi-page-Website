@@ -64,7 +64,7 @@
     position: relative;
     background-color: var(--snowColor);
     padding: 2.4rem;
-    transition: all .6s;
+    transition: all .5s;
 
     &--grid{
         height: 33rem;
@@ -102,7 +102,7 @@
         height: 10rem;
         row-gap: 0;
         grid-template-rows: 4rem 0;
-        transition: all .6s;
+        transition: all .5s;
     }
 
     

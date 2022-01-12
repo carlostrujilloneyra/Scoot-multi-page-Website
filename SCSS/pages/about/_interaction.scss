@@ -2,11 +2,24 @@
 @use '../../abstracts/mixins' as *;
 
 .interaction{
-    width: 2rem;
-    height: 2rem;
-    background-color: red;
-
+    width: 1.6rem;
+    height: 1.6rem;
+    border-left: .4rem solid var(--firstColorPrimary);
+    border-top: .4rem solid var(--firstColorPrimary);
+    transform: rotate(225deg);
+    
     &:hover{
         cursor: pointer;
     }
+}
+
+/*Daremos clases a las interacciones*/
+.first-interaction, .second-interaction{
+    transition: all .4s;
+    transform: rotate(45deg);
+}
+
+.new-interaction{
+    transition: all .4s;
+    transform: rotate(225deg);
 }

@@ -34,7 +34,7 @@
     color: var(--secondColorPrimary);
     line-height: 1.56;
     margin-top: 2.4rem;
-    transition: all .3s;
+    transition: all 1.2s;
     
     @include responsive(1300px){
         width: 90%;
@@ -46,6 +46,6 @@
 
     &__new{
         opacity: 0;
-        transition: all .3s;
+        transition: all .4s;
     }
 }
