@@ -39,8 +39,8 @@
         @include responsive(desktop){
             display: none;
             bottom: 19rem;
-            width: 23rem;
-            right: -11rem;
+            width: 24rem;
+            right: -12rem;
         }
 
         @include responsive(1300px){
@@ -48,8 +48,7 @@
         }
 
         @include responsive(bigDesktop){
-            width: 24rem;
-            bottom: 18.5rem;
+            bottom: 18rem;
             right: -2.4rem;
         }
     }

@@ -356,8 +356,8 @@ a {
   .main-hero::after {
     display: none;
     bottom: 19rem;
-    width: 23rem;
-    right: -11rem;
+    width: 24rem;
+    right: -12rem;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -367,8 +367,7 @@ a {
 }
 @media screen and (min-width: 1500px) {
   .main-hero::after {
-    width: 24rem;
-    bottom: 18.5rem;
+    bottom: 18rem;
     right: -2.4rem;
   }
 }
