@@ -578,7 +578,7 @@ Primera sección del "main"
     width: 35rem;
     height: 44rem;
     transform: rotate(-10deg);
-    background-image: url("../../../assets/patterns/circle.svg");
+    background-image: url("../assets/patterns/circle.svg");
     background-repeat: no-repeat;
   }
 }
