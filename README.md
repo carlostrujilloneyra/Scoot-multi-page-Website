@@ -49,9 +49,13 @@ cd Scoot-multi-page-Website
 ```
 
 
-## Contact
+## Contacto
 
 - Linkedin [Carlos Trujillo](https://www.linkedin.com/in/carlostrujillo21/)
 
+## Licencia
+
+Copyright © 2022 [Carlos Trujillo](https://github.com/carlostrujilloneyra).<br />
+This project is [MIT](/LICENSE) licensed
 
 
