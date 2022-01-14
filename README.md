@@ -9,16 +9,17 @@
 ## Acerca del Proyecto
 
  ## Objetivos del Proyecto
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
-- Objetivo 4
+- Construir un sitio Web utilizando las tecnologías del lado Frontend. 
+- Afirmar y poner en práctica las habilidades y conceptos adquiridos de manera autodidacta. 
+- Dar estilos a cada página del proyecto.
+- Aprender mejores prácticas.
 
 ## Tecnologías
 - HTML
 - CSS 
 - SASS
 - JavaScript
+
 
 ## Instalación
 
@@ -28,6 +29,13 @@ Para poder instalar el proyecto, tienes 2 formas. La primera es descargar el arc
 
 git clone https://github.com/carlostrujilloneyra/Scoot-multi-page-Website.git
 
+```
+
+Si clonas el respositorio en tu escritorio (desktop), puedes abrirlo con los siguientes comandos en tu terminal:
+
+```bash
+cd desktop
+cd Scoot-multi-page-Website
 ```
 
 
