@@ -8,11 +8,21 @@
 
 ## Acerca del Proyecto
 
+
+
+
+
+
+
+
+
+
  ## Objetivos del Proyecto
 - Construir un sitio Web utilizando las tecnologías del lado Frontend. 
 - Afirmar y poner en práctica las habilidades y conceptos adquiridos de manera autodidacta. 
 - Dar estilos a cada página del proyecto.
 - Aprender mejores prácticas.
+
 
 ## Tecnologías
 - HTML
