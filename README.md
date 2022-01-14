@@ -1,4 +1,4 @@
-# Scoot-multi-page-Website
+# Scoot-multi-page-Website  
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/50873002/149422886-039b09f4-29bc-426a-ad1b-f365ac56c8ad.gif" alt="screenshot" width="100%">
@@ -8,13 +8,7 @@
 
 ## Acerca del Proyecto
 
-
-
-
-
-
-
-
+- Scoot multi-page Website, es un sitio web que busca informar sobre cómo el uso del Scooter puede eliminar las molestias de la movilidad urbana, este sitio abarca las páginas Home, About, Location y Careers. El sitio está adaptado para verse correctamente en dispositivos móviles, tablets y desktops, ya que cuenta con "Responsive Web Design". El diseño fue tomado de [Frontend Mentor](https://www.frontendmentor.io/challenges), donde se empezó desde cero, usando las tecnologías mencionadas en la parte de abajo. Espero que sea de tu agrado el proyecto! 
 
 
  ## Objetivos del Proyecto
