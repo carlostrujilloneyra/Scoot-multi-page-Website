@@ -21,7 +21,7 @@
 ## Tecnologías
 - HTML
 - CSS 
-- SASS
+- [SASS](https://sass-lang.com/) (Usado para generar CSS)
 - JavaScript
 
 
@@ -42,6 +42,35 @@ cd desktop
 cd Scoot-multi-page-Website
 ```
 
+## Sugerencia
+Si quieres usar SASS, te recomiendo que tengas [Node JS](https://nodejs.org/es/). Para verificar que versión de Node tienes, realiza lo siguiente:
+
+1. Abre tu terminal.
+2. Ingresa el siguiente comando:
+
+```bash
+node -v
+```
+3. Te saldrá la versión de Node que tiene tu ordenador, seguido de ello, instalaremos el gestor de paquetes [npm](https://www.npmjs.com/), con el siguiente comando:
+
+```bash
+npm install npm -g
+```
+> Para verificar la versión de nmp, ingresa el siguiente comando:
+
+```bash
+npm install npm -v
+```
+
+4. Una vez realizado, los pasos anteriores instalaremos SASS con el siguiente comando:
+```bash
+npm install -g sass
+```
+5. Se instalará SASS y para poder usarlo en el proyecto, abrimos el proyecto en la terminal y seguido de ello ingresaremos el siguiente comando:
+
+```bash
+sass --watch SCSS(Carpeta de entrada):CSS (Carpeta de salida) --style expanded
+```
 
 ## Contacto
 
