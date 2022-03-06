@@ -8,7 +8,7 @@
 
 ## Acerca del Proyecto
 
-- Scoot multi-page Website, es un sitio web que busca informar sobre cómo el uso del Scooter puede eliminar las molestias de la movilidad urbana, este sitio abarca las páginas Home, About, Location y Careers. El sitio está adaptado para verse correctamente en dispositivos móviles, tablets y desktops, ya que cuenta con "Responsive Web Design". El diseño fue tomado de [Frontend Mentor](https://www.frontendmentor.io/challenges), donde se empezó desde cero, usando las tecnologías mencionadas en la parte de abajo. Espero que sea de tu agrado el proyecto! 
+- Scoot multi-page Website busca informar sobre cómo el uso del Scooter puede eliminar las molestias de la movilidad urbana, este sitio abarca las páginas Home, About, Location y Careers. El sitio está adaptado para verse correctamente en dispositivos móviles, tablets y desktops, ya que cuenta con "Responsive Web Design". El diseño fue tomado de [Frontend Mentor](https://www.frontendmentor.io/challenges), donde se empezó desde cero, usando las tecnologías mencionadas en la parte de abajo. Espero que sea de tu agrado el proyecto! 
 
 
  ## Objetivos del Proyecto
